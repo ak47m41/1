@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拨打电话</title>
+    <style>
+        /* 简单的样式，使按钮更显眼 */
+        #verifyButton {
+            display: block;
+            width: 80%;
+            padding: 10px;
+            margin: 20px auto;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #verifyButton:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <!-- 鉴证按钮 -->
+        <button id="verifyButton" onclick="callPhone()">鉴证</button>
+    </center>
+
+    <script>
+        function callPhone() {
+            // 使用tel:协议尝试拨打电话
+            window.location.href = 'tel:19121585675';
+        }
+    </script>
+</body>
+</html>
